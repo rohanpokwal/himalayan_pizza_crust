@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Himalayan Pizza Crust</title>
-    <!-- include bootstrap css -->
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -73,123 +72,175 @@
                   Register
                 </button></a
               >
-              <!-- Checkout Cart Button -->
-              <a href="checkout.html">
-                <button type="button" class="btn btn-danger">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 16 16"
-                    width="16"
-                    height="16"
-                    class="me-2"
-                  >
-                    <path
-                      d="M3 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-3Zm10 .25a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1 0-1.5h4.5a.75.75 0 0 1 .75.75ZM10.25 11a.75.75 0 0 0 0-1.5h-2.5a.75.75 0 0 0 0 1.5h2.5Z"
-                    ></path>
-                    <path
-                      d="M7.25 0h1.5c.966 0 1.75.784 1.75 1.75V3h3.75c.966 0 1.75.784 1.75 1.75v8.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25v-8.5C0 3.784.784 3 1.75 3H5.5V1.75C5.5.784 6.284 0 7.25 0Zm3.232 4.5A1.75 1.75 0 0 1 8.75 6h-1.5a1.75 1.75 0 0 1-1.732-1.5H1.75a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25ZM7 1.75v2.5c0 .138.112.25.25.25h1.5A.25.25 0 0 0 9 4.25v-2.5a.25.25 0 0 0-.25-.25h-1.5a.25.25 0 0 0-.25.25Z"
-                    ></path></svg
-                  >Cart
-                </button></a
-              >
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <!-- Items in the Cart -->
+    <h3 class="text-center registration-heading">Your Cart</h3>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Order#</th>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>HAWAIAAN PIZZA</td>
+            <td class="fw-bold">$ 10.99</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Deluxe</td>
+            <td class="fw-bold">$ 11.99</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Pepperoni</td>
+            <td class="fw-bold">$ 11.99</td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td class="fw-bold">Total:</td>
+            <td class="fw-bold text-danger">$ 37.93</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <!-- This Section includes the story about the himalayan pizza crust -->
-    <img src="images/pizza_1.jpg" class="w-100" alt="pizza-image" />
-    <article class="mx-5">
-      <h1 class="story-heading">Our Story</h1>
+    <!-- Form for Checking Out -->
+    <h3 class="text-center">Ready For Checkout</h3>
+    <div class="container registration-field mt-5">
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationServer01" class="form-label">First name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationServer01"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer02" class="form-label">Last name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationServer02"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="validationServerUsername" class="form-label"
+            >Username</label
+          >
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            <input
+              type="text"
+              class="form-control is-invalid"
+              id="validationServerUsername"
+              aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+              required
+              placeholder="@example.com"
+            />
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <!-- Address -->
+        <div class="col-md-4">
+          <label for="validationServer03" class="form-label">Address</label>
+          <input
+            type="text"
+            class="form-control is-invalid"
+            id="validationServer03"
+            aria-describedby="validationServer03Feedback"
+            required
+          />
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Please provide a valid US Address.
+          </div>
+        </div>
+        <!-- City -->
+        <div class="col-md-3">
+          <label for="validationServer05" class="form-label">City</label>
+          <input
+            type="text"
+            class="form-control is-invalid"
+            id="validationServer05"
+            aria-describedby="validationServer05Feedback"
+            required
+          />
+          <div id="validationServer05Feedback" class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <!-- State -->
+        <div class="col-md-3">
+          <label for="validationServer04" class="form-label">State</label>
+          <select
+            class="form-select is-invalid"
+            id="validationServer04"
+            aria-describedby="validationServer04Feedback"
+            required
+          >
+            <option selected disabled value="">Choose...</option>
+            <option>TX</option>
+            <option>OK</option>
+            <option>MO</option>
+          </select>
+          <div id="validationServer04Feedback" class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <!-- Zipcode -->
+        <div class="col-md-2">
+          <label for="validationServer05" class="form-label">Zip</label>
+          <input
+            type="text"
+            class="form-control is-invalid"
+            id="validationServer05"
+            aria-describedby="validationServer05Feedback"
+            required
+          />
+          <div id="validationServer05Feedback" class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
 
-      <p>
-        Nestled in the shadows of the majestic Himalayas, where prayer flags
-        flutter in the mountain breeze and the scent of spices fills the air,
-        lies a cozy pizzeria unlike any other. Himalayan Crust Pizzeria draws
-        inspiration from the rich culinary heritage of Nepal, blending
-        traditional flavors with the beloved Italian classic. <br />
-        <br />
-        Legend has it that the founder, a seasoned trekker and passionate food
-        enthusiast, embarked on a culinary journey across the rugged terrain of
-        Nepal. Along the way, he encountered the warmth of Nepali hospitality
-        and the bold flavors of the local cuisine. Inspired by the breathtaking
-        beauty of the Himalayas and the vibrant culture of Nepal, he returned
-        home with a vision—to create a pizzeria that would capture the essence
-        of the mountains in every bite. Thus, Himalayan Crust Pizzeria was born.
-      </p>
+        <!-- Confirmation -->
+        <div class="col-12">
+          <div class="form-check">
+            <input
+              class="form-check-input is-invalid"
+              type="checkbox"
+              value=""
+              id="invalidCheck3"
+              aria-describedby="invalidCheck3Feedback"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck3">
+              Check this box to Confirm Everything is Correct
+            </label>
+          </div>
+        </div>
 
-      <div class="para-images d-flex p-2 justify-content-around flex-wrap">
-        <img
-          src="images/pizza_3.jpeg"
-          class="object-fit-cover border rounded me-2"
-          alt="..."
-        />
-
-        <img
-          src="images/pizza_4.jpeg"
-          class="object-fit-cover border rounded me-2"
-          alt="..."
-        />
-
-        <img
-          src="images/pizza-5.jpeg"
-          class="object-fit-cover border rounded"
-          alt="..."
-        />
-
-        <img
-          src="images/pizza-6.jpeg"
-          class="object-fit-cover border rounded"
-          alt="..."
-        />
-      </div>
-
-      <p>
-        At Himalayan Crust, pizzas are crafted with care, using locally sourced
-        ingredients that reflect the diverse landscapes of Nepal. From the spicy
-        heat of Himalayan chilies to the earthy richness of yak cheese, each
-        topping tells a story of the land. <br />
-
-        As word of mouth spread, Himalayan Crust Pizzeria became a beloved
-        gathering spot for locals and travelers alike, a place where weary
-        adventurers could refuel with a slice of comfort and warmth amidst the
-        grandeur of the Himalayas.<br />
-        <br />
-        Today, Himalayan Crust continues to honor its roots, serving up
-        delicious pizzas infused with the spirit of Nepal. With every bite,
-        diners embark on a culinary journey through the mountains, savoring the
-        flavors of a land where every meal is a celebration of life.
-      </p>
-      <p>
-        Some of the Pizza that you can enjoy at Himalayan Crust Pizza includes:
-      </p>
-      <ul class="mb-2">
-        <li>
-          <span class="fw-bold">Margherita:</span>A classic Italian pizza topped
-          with tomato sauce, mozzarella cheese, fresh basil leaves, and a
-          drizzle of olive oil.
-        </li>
-        <li>
-          <span class="fw-bold">Pepperoni:</span>A popular choice featuring
-          tomato sauce, mozzarella cheese, and slices of pepperoni sausage.
-        </li>
-        <li>
-          <span class="fw-bold">Hawaiian:</span>Controversial to some, beloved
-          by others, this pizza typically includes tomato sauce, mozzarella
-          cheese, ham or Canadian bacon, and pineapple.
-        </li>
-        <li>
-          <span class="fw-bold">Meat Lover's:</span>Packed with various types of
-          meats like pepperoni, sausage, bacon, and sometimes even meatballs or
-          ham, along with tomato sauce and mozzarella cheese.
-        </li>
-      </ul>
-    </article>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
 
     <!-- This is going to be my footer -->
-    <footer
-      class="footer-sec p-2 d-flex justify-content-around align-items-center"
+    <!-- <footer
+      class="footer-sec p-2 d-flex justify-content-around align-items-center fixed-bottom"
     >
       <ul>
         <li>
@@ -257,7 +308,7 @@
       <div>
         <p>Address: <br />1234 Rolling Dr<br />Dallas, TX 76244</p>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- including bootstrap javascript -->
     <script

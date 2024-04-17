@@ -14,8 +14,8 @@
 }
 
 .navbar {
-  background-color: darkgoldenrod;
-  color: white;
+  background-color: #b8860b;
+  color: #ffffff;
 }
 
 .story-heading {
@@ -32,11 +32,43 @@
 }
 
 .footer-sec {
-  background-color: black;
+  background-color: #b8860b;
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 
-.footer-sec ul {
+.footer-sec ul li {
   list-style: none;
+}
+
+.footer-sec ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-sec ul li a:hover {
+  text-decoration: underline;
+  color: #000fff;
+}
+
+.deal-header {
+  margin-bottom: 100px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.registration-field {
+  margin-top: 500px;
+}
+
+.registration-heading {
+  margin-top: 150px;
+}
+
+.heading-mar {
+  margin-top: 150px;
 }
