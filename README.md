@@ -8,6 +8,21 @@ Welcome to Himalayan Crust Pizza. This project aims to provide a user-friendly p
 
 - [rohan pokwal](https://github.com/rohanpokwal/himalayan_pizza_crust)
 
+## Screenshots
+
+Home Page
+![App Screenshot](/images/home-page.png)
+Order Page
+![App Screenshot](/images/cart-page.png)
+Cart Page
+![App Screenshot](/images/checkout-page.png)
+Login Page
+![App Screenshot](/images/login-page.png)
+Register
+![App Screenshot](/images/register-page.png)
+deals Page
+![App Screenshot](/images/deals-page.png)
+
 ## Features
 
 - Our Story Page: It tells Users the story about how the business started and our long term vison.
@@ -36,6 +51,10 @@ Install my-project with git
 - Login with existing account or signup for new account
 - Visit order here page to order different types of pizza.
 - Visit checkout page to input your information for delivery.
+
+## Interesting Thing About The Website
+
+The Buttons in the checkout page is super interactive. If you click on the 'Add to Cart" button, It will pop up the modal saying 'Your item is successfully added to the cart'
 
 ## Contributing
 
